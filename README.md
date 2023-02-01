@@ -5,4 +5,4 @@ Basic HTML and CSS course on Udemy, Jonas Schmedtmann
 - Author    : Jonas Schmedtmann
 - Resource  : [Course Material](https://github.com/jonasschmedtmann/html-css-course)
 
->use `Typora`, `Obsidian` or other markdown readers to find contents
+>use `Typora`, `Obsidian` to find CONTENTS
