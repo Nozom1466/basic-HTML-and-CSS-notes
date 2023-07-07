@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Carousel Component</title>
+
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+      MAIN COLOR : #087f5b
+      GRAY COLOR : #343a40
+      */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      .pagination {
+        margin: 100px auto;
+        height: 62px;
+        width: auto;
+
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .pagination a {
+        text-decoration: none;
+      }
+
+      .pagination span {
+        text-align: center;
+        display: inline-block;
+        height: 52px;
+        width: 52px;
+        line-height: 52px;
+      }
+
+      .page,
+      .chevron {
+        text-align: center;
+        border-radius: 50px;
+
+        display: inline-block;
+      }
+
+      .page {
+        height: 52px;
+        width: 52px;
+        line-height: 52px;
+        color: #000;
+      }
+
+      .page:link {
+      }
+
+      .page:visited {
+      }
+
+      .page:hover {
+        color: #fff;
+        border: 1px solid #087f5b;
+        background-color: #087f5b;
+      }
+
+      .chevron {
+        height: 62px;
+        width: 62px;
+        line-height: 62px;
+
+        border: 1px solid #087f5b;
+      }
+
+      .chevron-left-svg,
+      .chevron-right-svg {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+
+        transform: translate(0, 25%);
+      }
+
+      .chevron:link {
+      }
+
+      .chevron:visited {
+      }
+
+      .chevron:hover {
+        border: 1px solid #087f5b;
+        background-color: #087f5b;
+      }
+
+      .chevron:hover svg {
+        stroke: #fff;
+      }
+
+      .active-page {
+        color: #fff;
+        border: 1px solid #087f5b;
+        background-color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <a href="#" alt="chevron-left" class="chevron-left chevron">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="chevron-left-svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </a>
+
+      <a href="#" alt="pagination" class="page">1</a>
+      <a href="#" alt="pagination" class="page">2</a>
+      <a href="#" alt="pagination" class="page active-page">3</a>
+      <a href="#" alt="pagination" class="page">4</a>
+      <a href="#" alt="pagination" class="page">5</a>
+      <a href="#" alt="pagination" class="page">6</a>
+
+      <span>...</span>
+
+      <a href="#" alt="pagination" class="page">23</a>
+
+      <a href="#" alt="chevron-right" class="chevron-right chevron">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="chevron-right-svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </a>
+    </div>
+  </body>
+</html>
